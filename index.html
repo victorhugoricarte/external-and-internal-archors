@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang = pt-br>
+    <head>
+        <meta charset = "UTF-8">
+        <meta name = "viewport" content = "width=device-width, initial-scale = 1.0">
+        <title>Hyperlinks</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <h1>Tipos de Âncoras</h1>
+
+        <h2>Âncoras (Conteúdo Externo):</h2>
+        <h3><code>&lt;/a&gt;</code> anchor (âncora)</h3>
+        <h4><strong>&rarr; Link que sobrepõe a aba atual</strong></h4>
+        <ul>
+            <li><strong><code>&lt;/a&gt;</code> (âncora) dentro de um <code>&lt;/p&gt;</code>,  com o atributo <code>href</code> (hypertext reference) c/ o parâmetro sendo a própria URL:</strong></li>
+            <p><strong>Exemplo:</strong></p>
+            <p>Acesse a <a href="https://www.youtube.com/watch?v=LeOVXQDsAIY&list=PLHz_AreHm4dkZ9-atkcmcBaMZdmLHft8n&index=28"">aula</a> sobre links e âncoras do Gustavo Guanabara</p>
+        </ul>
+        
+        <h4><strong>&rarr; Link <mark>externo</mark> que não sobrepõe a aba atual, abrindo uma nova aba do navegador:</strong></h4>
+        <ul>    
+            <li><strong>Atributo <code>target</code> com parâmetro <code>_blank</code> (em nova página em branco)</strong>
+            <ul><li>Faz o link ser aberto em uma nova aba, criando um alvo para uma página em branco.</li></ul></li>
+            <li><strong>Atributo <code>rel</code> com parâmetro <code>external</code> (externo)</strong> <ul><li>Permite que o navegador reconheça o link como externo, altamente recomendável.</li></ul>
+            <p><strong>Exemplo:</strong></p>
+            <p>Acesse a home do <a href="https://www.instagram.com" target="_blank" rel="external">Instagram</a></p>
+        </ul>
+        <h4><strong>&rarr; Link externo patrocinados/não aprovados</strong></h4>
+        <ul>
+            <li><strong>Atributo <code>rel</code> recebe parâmetro <code>nofollow</code></strong></li>
+            <p>Patrocinado por <a href="https://www.invictus.com.br/" target="_blank" rel="nofollow">Invictus</a></p>
+        </ul>
+
+        <h2>Âncoras (Conteúdo Interno):</h2>
+        <h3><code>&lt;/a&gt;</code> anchor</h3>
+
+        <h4><strong>&rarr; Link de uma próxima página <mark>interna</mark></strong></h4>
+        <ul>
+            <li><strong>Atributo <code>href</code> com o parâmetro sendo um documento HTML</strong></li>
+            <ul><li>É recomendável que esse documento esteja localizado dentro do mesmo projeto/pasta, e caso esteja dentro de uma pasta dentro desse mesmo projeto será necessária a menção da mesma (pasta/documento).</li></ul>
+            <li><strong>Atributo <code>rel</code> recebendo o parâmetro <code>next</code>, comunicando ao navegador que esse link interno se trata da próxima página.</strong></li>
+            <p><strong>Exemplo:</strong></p>
+            <p><a href = "pag002.html" rel = "next" target="_self">Próxima Página [&rarr;]</a></p>
+        </ul>
+
+        <h4>&rarr; Hyperlink para uma página interna dentro de uma pasta</h4>
+        <ul>Acesse a <a href="pages/pag003.html" rel="next" target="_self">Página de Notícias</a></ul>
+
+
+    </body>
+</html>
