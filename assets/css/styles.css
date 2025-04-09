@@ -1,6 +1,19 @@
 body {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 10px;
+    color:#335ab3;
+    background-color: azure;
 }
 h1 {
     font-weight: 500px;
+    color: linear-gradient(to right,);
+}
+li {
+    margin: 10px;
+}
+code {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #eeeeee;
+    border-radius: 3px;
+    margin: 0 3px;
 }
