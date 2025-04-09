@@ -4,10 +4,6 @@ body {
     color:#335ab3;
     background-color: azure;
 }
-h1 {
-    font-weight: 500px;
-    color: linear-gradient(to right,);
-}
 li {
     margin: 10px;
 }
@@ -16,4 +12,13 @@ code {
     background-color: #eeeeee;
     border-radius: 3px;
     margin: 0 3px;
+}
+.degrade {
+    background: linear-gradient(to right, #6e82b1,#4362a9, #335ab3, #335ab3);
+    background-clip: text;
+    color: transparent;
+}
+a {
+    font-weight: bold;
+    color:#4362a9;
 }
